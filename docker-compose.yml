@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  flor-amarilla-web:
+    build: .
+    container_name: flor-web
+    ports:
+      - "3050:3050"
+    restart: unless-stopped
